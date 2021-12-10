@@ -14,7 +14,7 @@ export function playerFactory() {
 }
 
 @NgModule({
-  declarations: [AppComponent, AnimationLottieComponent, HomePokemonComponent],
+  declarations: [AppComponent, AnimationLottieComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
