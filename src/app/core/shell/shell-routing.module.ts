@@ -13,6 +13,13 @@ const routes: Routes = [
         (m) => m.HomePokemonModule
       ),
   },
+  {
+    path: 'details',
+    loadChildren: () =>
+      import('../../modules/pokemon-details/pokemon-details.module').then(
+        (m) => m.PokemonDetailsModule
+      ),
+  },
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
